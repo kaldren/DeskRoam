@@ -1,0 +1,6 @@
+@DeskRoam.API_HostAddress = http://localhost:5079
+
+GET {{DeskRoam.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
