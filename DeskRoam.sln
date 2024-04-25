@@ -7,6 +7,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{A76DA9E8-36A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeskRoam.API", "src\API\DeskRoam.API\DeskRoam.API.csproj", "{A720F025-7C19-4C1F-9AE2-BA149D7EE453}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DeskRoam.API.Requests", "DeskRoam.API.Requests", "{01BD1124-36F3-4480-B04A-68A027A247DB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{1ABC6862-4F8C-40A3-A3B3-F24C4B625078}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Identity", "Identity", "{1224A2C2-475B-45FE-A421-A1292089081C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeskRoam.Identity", "src\Modules\DeskRoam.Identity\DeskRoam.Identity.csproj", "{80AC2678-3E93-409E-9778-67EEBEB5ED0C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,12 +25,19 @@ Global
 		{A720F025-7C19-4C1F-9AE2-BA149D7EE453}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A720F025-7C19-4C1F-9AE2-BA149D7EE453}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A720F025-7C19-4C1F-9AE2-BA149D7EE453}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80AC2678-3E93-409E-9778-67EEBEB5ED0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80AC2678-3E93-409E-9778-67EEBEB5ED0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80AC2678-3E93-409E-9778-67EEBEB5ED0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80AC2678-3E93-409E-9778-67EEBEB5ED0C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{A720F025-7C19-4C1F-9AE2-BA149D7EE453} = {A76DA9E8-36A2-4A5F-8E25-46437825CB62}
+		{01BD1124-36F3-4480-B04A-68A027A247DB} = {A76DA9E8-36A2-4A5F-8E25-46437825CB62}
+		{1224A2C2-475B-45FE-A421-A1292089081C} = {1ABC6862-4F8C-40A3-A3B3-F24C4B625078}
+		{80AC2678-3E93-409E-9778-67EEBEB5ED0C} = {1224A2C2-475B-45FE-A421-A1292089081C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9EDBC2B6-369D-4C45-9D1B-9296C8C36937}
