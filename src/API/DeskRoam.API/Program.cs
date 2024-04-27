@@ -1,3 +1,4 @@
+using DeskRoam.API.Middleware;
 using DeskRoam.Identity;
 using FastEndpoints;
 
@@ -7,6 +8,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services
     .AddFastEndpoints()
     .AddIdentityServices();
+
+builder.Services.AddExceptionHandler<ExceptionHandlingMiddleware>();
+builder.Services.AddProblemDetails();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -20,6 +24,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+app.UseExceptionHandler();
+
 app.UseFastEndpoints();
 
 app.UseHttpsRedirection();

@@ -12,12 +12,10 @@ public class Login : Endpoint<LoginRequest, LoginResponse>
 
     public override async Task HandleAsync(LoginRequest req, CancellationToken ct)
     {
-        await SendAsync(new() { Message = "You are logged in!" });
+        throw new ApplicationException();
+        await SendAsync(new LoginResponse("Test"));
     }
 }
 
 public record LoginRequest(string Username, string Password);
-public record LoginResponse
-{
-    public string Message { get; set; }
-}
+public record LoginResponse(string Message);
